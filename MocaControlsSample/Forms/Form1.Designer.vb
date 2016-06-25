@@ -49,6 +49,7 @@ Partial Class Form1
         Me.DataBinder1 = New Moca.Win.DataBinder(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ComboBoxEx1 = New Moca.Win.ComboBoxEx()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,6 +70,8 @@ Partial Class Form1
         '
         'NullableDateTimePicker1
         '
+        Me.NullableDateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.NullableDateTimePicker1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Solid
         Me.NullableDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.NullableDateTimePicker1.FormatAsString = "yyyy'年'M'月'd'日'"
         Me.NullableDateTimePicker1.Location = New System.Drawing.Point(12, 72)
@@ -100,7 +103,7 @@ Partial Class Form1
         Me.WysiwygEditor1.Location = New System.Drawing.Point(10, 95)
         Me.WysiwygEditor1.Margin = New System.Windows.Forms.Padding(1)
         Me.WysiwygEditor1.Name = "WysiwygEditor1"
-        Me.WysiwygEditor1.Rtf = "{\rtf1\ansi\ansicpg932\deff0\deflang1033\deflangfe1041{\fonttbl{\f0\fnil\fcharset" & _
+        Me.WysiwygEditor1.Rtf = "{\rtf1\ansi\ansicpg932\deff0\deflang1033\deflangfe1041{\fonttbl{\f0\fnil\fcharset" &
     "128 MS UI Gothic;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\lang1041\f0\fs18\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.WysiwygEditor1.Size = New System.Drawing.Size(358, 293)
         Me.WysiwygEditor1.TabIndex = 3
@@ -152,13 +155,15 @@ Partial Class Form1
         '
         'AlertMessage1
         '
+        Me.AlertMessage1.AutoCloseSecond = 0
         Me.AlertMessage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer))
         Me.AlertMessage1.DefaultMessageBackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AlertMessage1.DefaultMessageForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.AlertMessage1.DirectionType = Moca.Win.AnimateWindow.DirectionType.Top
         Me.AlertMessage1.Dock = System.Windows.Forms.DockStyle.Top
         Me.AlertMessage1.ErrorBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.AlertMessage1.ErrorForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.AlertMessage1.Font = New System.Drawing.Font("メイリオ", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.AlertMessage1.FullClickClose = False
         Me.AlertMessage1.Location = New System.Drawing.Point(0, 0)
         Me.AlertMessage1.Margin = New System.Windows.Forms.Padding(0)
         Me.AlertMessage1.Name = "AlertMessage1"
@@ -311,11 +316,24 @@ Partial Class Form1
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "<- Delete Key = NULL"
         '
+        'ComboBoxEx1
+        '
+        Me.ComboBoxEx1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.ComboBoxEx1.BorderStyle = System.Windows.Forms.ButtonBorderStyle.Solid
+        Me.ComboBoxEx1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBoxEx1.FormattingEnabled = True
+        Me.ComboBoxEx1.Location = New System.Drawing.Point(285, 72)
+        Me.ComboBoxEx1.Name = "ComboBoxEx1"
+        Me.ComboBoxEx1.Size = New System.Drawing.Size(76, 20)
+        Me.ComboBoxEx1.TabIndex = 22
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(550, 395)
+        Me.Controls.Add(Me.ComboBoxEx1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.AlertMessage1)
         Me.Controls.Add(Me.RadioButton2)
@@ -336,7 +354,7 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-	Friend WithEvents MocaDi1 As Moca.Win.MocaDi
+    Friend WithEvents MocaDi1 As Moca.Win.MocaDi
 	Friend WithEvents NullableDateTimePicker1 As Moca.Win.NullableDateTimePicker
 	Friend WithEvents TextBoxEx1 As Moca.Win.TextBoxEx
 	Friend WithEvents WysiwygEditor1 As Moca.Win.WYSIWYGEditor
@@ -361,4 +379,5 @@ Partial Class Form1
 	Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
 	Friend WithEvents Label1 As System.Windows.Forms.Label
 	Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents ComboBoxEx1 As ComboBoxEx
 End Class
