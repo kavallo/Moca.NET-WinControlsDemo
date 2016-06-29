@@ -83,8 +83,8 @@
       <HintPath>..\packages\Moca.NETConfiguration.1.0.2\lib\net40\MocaConfiguration.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MocaControls, Version=4.0.3.0, Culture=neutral, PublicKeyToken=f981690db0db7da4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moca.NETControls.1.2.0\lib\net40-full\MocaControls.dll</HintPath>
+    <Reference Include="MocaControls, Version=4.0.4.0, Culture=neutral, PublicKeyToken=f981690db0db7da4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moca.NETControls.1.2.1\lib\net40-full\MocaControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MocaWin, Version=4.0.0.0, Culture=neutral, PublicKeyToken=74dd2591eb474191, processorArchitecture=MSIL">
@@ -120,6 +120,7 @@
     <Compile Include="Forms\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Models\Entity.vb" />
     <Compile Include="My Project\AppConfigTransformAssemblyInfo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -197,7 +198,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Db\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>

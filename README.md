@@ -1,5 +1,7 @@
 Moca.NET Windows Controls Demo
 ========================
+[![Build status](https://ci.appveyor.com/api/projects/status/pwv5ljcew0e4edfc?svg=true)](https://ci.appveyor.com/project/miyabis/moca-net-wincontrolsdemo)
+
 
 [Moca.NET Controls](https://github.com/mocanet/MocaControls) Demo
 

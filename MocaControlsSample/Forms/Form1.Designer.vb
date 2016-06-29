@@ -79,6 +79,7 @@ Partial Class Form1
         Me.NullableDateTimePicker1.NullValue = ""
         Me.NullableDateTimePicker1.Size = New System.Drawing.Size(129, 19)
         Me.NullableDateTimePicker1.TabIndex = 1
+        Me.NullableDateTimePicker1.UnfocusedBorderColor = System.Drawing.SystemColors.ControlDark
         Me.NullableDateTimePicker1.Value = New Date(2014, 8, 22, 12, 13, 30, 969)
         '
         'TextBoxEx1
@@ -155,7 +156,7 @@ Partial Class Form1
         '
         'AlertMessage1
         '
-        Me.AlertMessage1.AutoCloseSecond = 0
+        Me.AlertMessage1.AutoCloseSecond = 3
         Me.AlertMessage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(186, Byte), Integer))
         Me.AlertMessage1.DefaultMessageBackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.AlertMessage1.DefaultMessageForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -163,7 +164,7 @@ Partial Class Form1
         Me.AlertMessage1.Dock = System.Windows.Forms.DockStyle.Top
         Me.AlertMessage1.ErrorBackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.AlertMessage1.ErrorForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.AlertMessage1.FullClickClose = False
+        Me.AlertMessage1.FullClickClose = True
         Me.AlertMessage1.Location = New System.Drawing.Point(0, 0)
         Me.AlertMessage1.Margin = New System.Windows.Forms.Padding(0)
         Me.AlertMessage1.Name = "AlertMessage1"
@@ -326,6 +327,7 @@ Partial Class Form1
         Me.ComboBoxEx1.Name = "ComboBoxEx1"
         Me.ComboBoxEx1.Size = New System.Drawing.Size(76, 20)
         Me.ComboBoxEx1.TabIndex = 22
+        Me.ComboBoxEx1.UnfocusedBorderColor = System.Drawing.SystemColors.ControlDark
         '
         'Form1
         '
